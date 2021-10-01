@@ -48,5 +48,21 @@ fun main() {
     }
 
     println("$time $greetings")
+    
+    
+    // Homework 
+        val time = 13
+    val isFriday = true
+
+    if (isFriday) println("Last day of the week. You can do it keep pushing!")
+
+    val greeting = when {
+        time < 13 -> "Not fuel charge time yet."
+        time == 13 || time == 14 -> "Recharge completed."
+        time == 16 -> "Wanna go home?"
+        time > 18 -> "Free me time! Hands on Android!"
+        else -> "Zzzzzz..."
+    }
+    println("Time: $time   $greeting")
 
 }
