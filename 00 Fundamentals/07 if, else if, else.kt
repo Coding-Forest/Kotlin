@@ -69,6 +69,26 @@ fun main() {
         else if (time == 26) println("at $time:00 $routine")
     }
     println("repeat")
+    
+    
+    // Homework together
+    var time: Int
+
+    for (time in 0..24) {
+
+        val greeting = if (time in 0..7) {
+            "Zzz..."
+        } else if (time in 7..11) {
+            "Guten Morgen!"
+        } else if (time in 12..17) {
+            "Guten Tag!"
+        } else if (time in 18..20) {
+            "Guten Abend."
+        } else "Gute Nacht"
+
+        println("at $time:00 ${if (time == 7 || time == 12 || time == 18 || time == 0) greeting else continue}")
+    }
+    
 }
 
 /*
@@ -78,4 +98,11 @@ at 22:00 back home!
 at 25:00 Do extra homework
 at 26:00 fall asleep.
 repeat
+
+
+// Homework together
+at 0:00 Zzz...
+at 7:00 Zzz...
+at 12:00 Guten Tag!
+at 18:00 Guten Abend.
 */
